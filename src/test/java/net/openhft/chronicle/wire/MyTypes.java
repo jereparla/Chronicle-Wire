@@ -121,4 +121,11 @@ class MyTypes extends SelfDescribingMarshallable {
             return ordinal();
         }
     }
+
+    public Object[] makeArray() {
+
+        Object[] array = {text().toString(), flag(), b(), s(), ch(), i(), f(), d(), l()};
+
+        return array;
+    }
 }
